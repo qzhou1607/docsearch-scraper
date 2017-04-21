@@ -79,7 +79,8 @@ class AlgoliaSettings:
             'removeWordsIfNoResults': 'allOptional',
             'userData': {
                 'crawling_issue': False
-            }
+            },
+            'enableCamelcase': True
         }
         # apply custom updates
         if config.custom_settings is not None:
