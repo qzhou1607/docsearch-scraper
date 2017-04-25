@@ -44,6 +44,11 @@ class AlgoliaSettings:
             'attributesToSnippet': [
                 'content:10'
             ],
+            'camelcaseAttributes': [
+                'hierarchy',
+                'hierarchy_radio',
+                'content'
+            ],
             'attributesForFaceting': ['tags', 'no_variables', 'extra_attributes'] + config.get_extra_facets(),
             'distinct': True,
             'attributeForDistinct': 'url',
@@ -79,8 +84,7 @@ class AlgoliaSettings:
             'removeWordsIfNoResults': 'allOptional',
             'userData': {
                 'crawling_issue': False
-            },
-            'enableCamelcase': True
+            }
         }
         # apply custom updates
         if config.custom_settings is not None:

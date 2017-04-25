@@ -118,6 +118,10 @@ class DefaultStrategy(AbstractStrategy):
                 'url_without_variables': current_page_url
             }
 
+            record['hierarchy_camel'] = record['hierarchy'],
+            record['hierarchy_radio_camel'] = record['hierarchy_radio']
+            record['content_camel'] = record['content']
+
             # get meta data
             for meta_node in self.select('//meta'):
                 name = meta_node.get('name')
