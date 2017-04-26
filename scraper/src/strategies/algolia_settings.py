@@ -44,7 +44,7 @@ class AlgoliaSettings:
             'attributesToSnippet': [
                 'content:10'
             ],
-            'camelcaseAttributes': [
+            'camelCaseAttributes': [
                 'hierarchy',
                 'hierarchy_radio',
                 'content'
